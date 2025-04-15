@@ -34,4 +34,5 @@ This project demonstrates how to synchronize the **RTC (Real-Time Clock)** of an
 ## 📁 Project Structure
 
 
+ 
 <img src="image/boardconnection.jpg" alt="ESP32 to FRDM-K64F UART RTC Sync" width="600"/>
