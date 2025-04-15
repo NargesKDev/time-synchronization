@@ -24,6 +24,7 @@ This project demonstrates how to synchronize the **RTC (Real-Time Clock)** of an
 
 ---
 
+
 ## 💻 Software Stack
 
 - **ESP32**: Programmed using [PlatformIO](https://platformio.org/) with the Arduino framework.
