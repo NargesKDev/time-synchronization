@@ -24,12 +24,33 @@ This project demonstrates how to synchronize the **RTC (Real-Time Clock)** of an
 
 ---
 
-
 ## 💻 Software Stack
 
 - **ESP32**: Programmed using [PlatformIO](https://platformio.org/) with the Arduino framework.
 - **FRDM-K64F**: Programmed using [MCUXpresso IDE](https://www.nxp.com/mcuxpresso/ide) with the Kinetis SDK.
 
 ---
- 
+ ## 🧩 Activating USB Devices in WSL
+
+To enable USB device access inside **WSL 2**, follow these steps:
+
+1. **Install** `usbipd-win` version **5.0.0** from [GitHub Releases](https://github.com/dorssel/usbipd-win/releases).
+2. Open **Command Prompt** as **Administrator** and run:
+   ```bash
+   usbipd list
+
+This will show all connected USB devices. Find the BUSID of the device you want to access in WSL.
+
+
+3. Bind the device and replace <BUSID> with your device’s ID (e.g., 4-4).
+   ```bash
+   usbipd bind --busid <BUSID>
+
+
+5. Attach the device to WSL:
+   ```bash
+   usbipd attach --wsl --busid <BUSID>
+  
+You can find full information in https://learn.microsoft.com/en-us/windows/wsl/connect-usb.
+ ---
 <img src="image/board.jpg" alt="ESP32 to FRDM-K64F UART RTC Sync" width="500"/>
