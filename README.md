@@ -31,9 +31,5 @@ This project demonstrates how to synchronize the **RTC (Real-Time Clock)** of an
 - **FRDM-K64F**: Programmed using [MCUXpresso IDE](https://www.nxp.com/mcuxpresso/ide) with the Kinetis SDK.
 
 ---
-
-## 📁 Project Structure
-
-
  
-<img src="image/boardconnection.jpg" alt="ESP32 to FRDM-K64F UART RTC Sync" width="500"/>
+<img src="image/board.jpg" alt="ESP32 to FRDM-K64F UART RTC Sync" width="500"/>
